@@ -13,10 +13,14 @@ https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files
 # text = open("C:\Users\HP\Desktop\LAMBDA\Python\Intro-Python-I\src\foo.txt")
 # print(text.read())
 # text.close()
-f = open("foo.txt", "r")
-content = f.read()
-print(content)
-f.close()
+# f = open("foo.txt", "r")
+# content = f.read()
+# print(content)
+# f.close()
+
+with open("foo.txt") as f:
+    content = f.read()
+    print(content)
 # Open up a file called "bar.txt" (which doesn't exist yet) for
 # writing. Write three lines of arbitrary content to that file,
 # then close the file. Open up "bar.txt" and inspect it to make

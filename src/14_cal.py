@@ -42,3 +42,5 @@ elif len(x) > 1:
     print(calendar.month(int(x[1]), int(x[0])))
 else:
     print('Expects two arguments, month and date')
+
+    #error handling
